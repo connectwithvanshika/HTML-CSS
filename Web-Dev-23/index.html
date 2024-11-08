@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>CSS Position Property</title>
+    <style>
+      /* * {
+        margin: 0;
+        padding: 0;
+      } */
+
+      .box {
+        border: 2px solid black;
+        height: 133px;
+        width: 80vw;
+        padding: 3px;
+        margin: 3px;
+      }
+      .box1 {
+        background-color: pink;
+        position: relative;
+        z-index:1;
+        /* z-index: 1; value set the pink box above yellow one along with position: relative; property */
+      }
+      .box2 {
+        background-color: yellow;
+        position: relative;
+        top: -50px;
+        left: 40px;    
+       }
+      .box3 {
+        background-color: chocolate;
+      }
+      .box4 {
+        background-color: cornflowerblue;
+      }
+    </style>
+  </head>
+  <body>
+    <h1>CSS Position Property</h1>
+    <p>
+      The CSS positions allow you to precisely control the placement of an
+      element on the web page.
+    </p>
+    <ul>
+      <li>Static Position</li>
+      <p>*The elements are positioned according to the normal flow of the document.</p>
+      <li>Relative position</li>
+      <p>
+        *Elements are positioned relative to the normal position in the document.
+        You can use the top, right, bottom, and left properties to move the
+        element from its original position.
+      </p>
+      <h4>Z-index</h4>
+      <p>z-index is a CSS property used to control the vertical stacking order of elements that overlap one another. It only works on elements that have a position value of relative, absolute, fixed, or sticky. By default, elements are stacked in the order they appear in the HTML code, with later elements appearing on top of earlier ones.</p>
+      <li>Absolute Position</li>
+      <li>Fixed Position</li>
+      <li>Sticky Position</li>
+    </ul>
+    <div class="box box1"></div>
+    <div class="box box2"></div>
+    <div class="box box3"></div>
+    <div class="box box4"></div>
+  </body>
+</html>
